@@ -3,9 +3,9 @@
 
 //node structure
 typedef struct Node {
-    int value;              //value in the array
-    int frequency;          //frequency of the value
-    struct Node *next;      //pointer to the next node
+    int value;    //value in the array
+    int frequency;    //frequency of the value
+    struct Node *next;    //pointer to the next node
 } Node;
 
 //function create new node
