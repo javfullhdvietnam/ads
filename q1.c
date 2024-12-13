@@ -20,3 +20,19 @@ int main() {
     }
     return 0;
 }
+
+
+/*
+calculate the complexity:
+- time complexity:
+    +the function makes n recursive calls to calculate n terms of the series.
+    +each call performs constant-time calculations (O(1)).
+    +total time complexity: O(n).
+
+- space complexity:
+    +each recursive call uses stack memory to store the state of the function.
+    +the maximum depth of recursion is n (when n = 0, recursion stops).
+    +total space complexity: O(n).
+
+=>> So the complexity is O(n)
+*/
