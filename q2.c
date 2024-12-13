@@ -8,6 +8,11 @@ typedef struct Node {
     struct Node *next;    //pointer to the next node
 } Node;
 
+//function to initialize the list
+Node* init() {
+    return NULL; // Start with an empty list
+}
+
 //function create new node
 Node* create_node(int value) {
     Node *newNode = (Node*)malloc(sizeof(Node));
@@ -53,14 +58,14 @@ void free_list(Node *head) {
     }
 }
 
-//main funtion
+//main function
 int main() {
     // sample array
     int array[] = {1, 13, 539, 41, 59, 13, -82, 79, 121, 20, 1, 4, 13, -19};
     int size = sizeof(array) / sizeof(array[0]);
 
-    //create the linked list
-    Node *head = NULL;
+    //initialize the linked list
+    Node *head = init();
 
     //add elements from the array to the list
     for (int i = 0; i < size; i++) {
